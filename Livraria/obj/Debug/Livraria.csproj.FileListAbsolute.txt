@@ -1,0 +1,98 @@
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\Livraria.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\Livraria.pdb
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\Antlr3.Runtime.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.AspNet.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.Core.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.OAuth.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.OpenId.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\EntityFramework.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\Microsoft.Web.Infrastructure.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\Microsoft.Web.WebPages.OAuth.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\Newtonsoft.Json.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Net.Http.Formatting.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.Helpers.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.Http.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.Http.WebHost.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.Mvc.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.Optimization.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.Razor.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.WebPages.Deployment.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.WebPages.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.WebPages.Razor.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\WebGrease.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\WebMatrix.Data.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\WebMatrix.WebData.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\EntityFramework.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\Newtonsoft.Json.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Net.Http.Formatting.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.Helpers.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.Http.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.Http.WebHost.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.Mvc.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.Razor.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.WebPages.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.WebPages.Deployment.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\System.Web.WebPages.Razor.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\WebMatrix.Data.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\Microsoft.Web.WebPages.OAuth.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\WebMatrix.WebData.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.AspNet.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.Core.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.OAuth.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.OpenId.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\obj\Debug\Livraria.dll
+c:\users\cláudia\documents\visual studio 2012\Projects\Livraria\Livraria\obj\Debug\Livraria.pdb
+C:\Users\Cláudia\Documents\Visual Studio 2012\Projects\Livraria\Livraria\obj\Debug\Livraria.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\Livraria.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\Livraria.pdb
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\Antlr3.Runtime.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.Core.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\EntityFramework.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\Newtonsoft.Json.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Net.Http.Formatting.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.Helpers.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.Http.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.Http.WebHost.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.Mvc.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.Optimization.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.Razor.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.WebPages.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.WebPages.Razor.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\WebGrease.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\WebMatrix.Data.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\WebMatrix.WebData.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\EntityFramework.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\Newtonsoft.Json.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Net.Http.Formatting.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.Helpers.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.Http.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.Http.WebHost.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.Mvc.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.Razor.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.WebPages.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\System.Web.WebPages.Razor.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\WebMatrix.Data.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\WebMatrix.WebData.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.Core.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\obj\Debug\Livraria.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\obj\Debug\Livraria.dll
+C:\Users\AlunoInfnet\Desktop\Livraria\Livraria\obj\Debug\Livraria.pdb

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LivrariaModelStoreContainer" CdmEntityContainer="LivrariaEntities">
+    <EntitySetMapping Name="Autor">
+      <EntityTypeMapping TypeName="IsTypeOf(LivrariaModel.Autor)">
+        <MappingFragment StoreEntitySet="Autor">
+          <ScalarProperty Name="IdAutor" ColumnName="IdAutor" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Livro">
+      <EntityTypeMapping TypeName="IsTypeOf(LivrariaModel.Livro)">
+        <MappingFragment StoreEntitySet="Livro">
+          <ScalarProperty Name="IdLivro" ColumnName="IdLivro" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Preco" ColumnName="Preco" />
+          <ScalarProperty Name="DataPublicacao" ColumnName="DataPublicacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="LivroAutor" TypeName="LivrariaModel.LivroAutor" StoreEntitySet="LivroAutor">
+      <EndProperty Name="Autor">
+        <ScalarProperty Name="IdAutor" ColumnName="Autor_IdAutor" />
+      </EndProperty>
+      <EndProperty Name="Livro">
+        <ScalarProperty Name="IdLivro" ColumnName="Livro_IdLivro" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

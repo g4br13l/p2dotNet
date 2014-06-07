@@ -1,0 +1,53 @@
+﻿@model Livraria.Models.LivroModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>LivroModel</legend>
+
+        @Html.HiddenFor(model => model.IdLivro)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nome)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nome)
+            @Html.ValidationMessageFor(model => model.Nome)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Preco)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Preco)
+            
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DataPublicacao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DataPublicacao)
+            @Html.ValidationMessageFor(model => model.DataPublicacao)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

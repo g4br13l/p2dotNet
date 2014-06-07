@@ -1,0 +1,38 @@
+[
+	{ 
+		"Id": 1,
+	 	"Nome": "Código da vinci",
+	 	"Preco": 12,
+	 	"DataPublicacao": "15/10/1992",
+	 	"Autor": {
+	 		"Nome": "Frank Paul"
+	 	}  
+	},
+	{ 
+		"Id": 2,
+	 	"Nome": "Confições de uma adolescente sem freio",
+	 	"Preco": 10,
+	 	"DataPublicacao": "15/10/1992",
+	 	"Autor": {
+	 		"Nome": "Talita Rebolsas"
+	 	}  
+	},
+	{ 
+		"Id": 3,
+	 	"Nome": "Dom Casmurro",
+	 	"Preco": 30,
+	 	"DataPublicacao": "15/10/1992",
+	 	"Autor": {
+	 		"Nome": "Machado De Assis"
+	 	}  
+	},
+	{ 
+		"Id": 4,
+	 	"Nome": "Slash",
+	 	"Preco": 40,
+	 	"DataPublicacao": "15/10/1992",
+	 	"Autor": {
+	 		"Nome": "Eizio Auditore"
+	 	}  
+	}
+]

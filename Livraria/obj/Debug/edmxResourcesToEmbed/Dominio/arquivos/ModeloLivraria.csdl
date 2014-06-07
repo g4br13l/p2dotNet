@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LivrariaModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="LivrariaEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Autor" EntityType="LivrariaModel.Autor" />
+    <EntitySet Name="Livro" EntityType="LivrariaModel.Livro" />
+    <AssociationSet Name="LivroAutor" Association="LivrariaModel.LivroAutor">
+      <End Role="Autor" EntitySet="Autor" />
+      <End Role="Livro" EntitySet="Livro" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Autor">
+    <Key>
+      <PropertyRef Name="IdAutor" />
+    </Key>
+    <Property Name="IdAutor" Type="Int32" Nullable="false" />
+    <Property Name="Nome" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Livro" Relationship="LivrariaModel.LivroAutor" FromRole="Autor" ToRole="Livro" />
+  </EntityType>
+  <EntityType Name="Livro">
+    <Key>
+      <PropertyRef Name="IdLivro" />
+    </Key>
+    <Property Name="IdLivro" Type="Int32" Nullable="false" />
+    <Property Name="Nome" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Preco" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="DataPublicacao" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Autor" Relationship="LivrariaModel.LivroAutor" FromRole="Livro" ToRole="Autor" />
+  </EntityType>
+  <Association Name="LivroAutor">
+    <End Role="Autor" Type="LivrariaModel.Autor" Multiplicity="*" />
+    <End Role="Livro" Type="LivrariaModel.Livro" Multiplicity="*" />
+  </Association>
+</Schema>

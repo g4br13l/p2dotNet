@@ -1,0 +1,51 @@
+
+<h2> Cadastro </h2>
+
+<div ng-controller="CadastroLivroController">
+
+	<fieldset>
+
+	    <div class="editor-label">
+	        Nome: {{ livro.nome }}
+	    </div>
+
+	    <div class="editor-label">
+	        Preco: {{ livro.preco }}
+	    </div>
+
+	    <div class="editor-label">
+	        data de Publicacao: {{ livro.dataPublicacao }}
+	    </div>
+	</fieldset>
+
+
+	<fieldset>
+	    <legend>Livro</legend>
+
+	    <div class="editor-label">
+	        Nome
+	    </div>
+	    <div class="editor-field">
+	        <input type="text" name="Nome" ng-model="livro.nome"/>
+	    </div>
+
+	    <div class="editor-label">
+	        Preco
+	    </div>
+	    <div class="editor-field">
+	         <input type="text" name="preco" ng-model="livro.preco"/>
+	    </div>
+
+	    <div class="editor-label">
+	        data de Publicacao
+	    </div>
+	    <div class="editor-field">
+	         <input type="text" name="dataPublicacao" ng-model="livro.dataPublicacao"/>
+	    </div>
+
+	    <p>
+	        <button type="button" class="btn btn-default"> Criar </button> 
+	    </p>
+	</fieldset>
+
+</div>

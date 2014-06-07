@@ -1,0 +1,34 @@
+<h2> Lista de livros </h2>
+
+<div class="jumbotron" ng-controller="IndexController">
+	<table>
+	    <tr>
+	        <th>
+	            Nome
+	        </th>
+	        <th>
+	            Preco
+	        </th>
+	        <th>
+	            Data de Publicacao
+	        </th>
+	        <th></th>
+	    </tr>
+		
+		<tr ng-repeat="livro in livros">
+	        <td>
+	            {{ livro.Nome }}
+	        </td>
+	        <td>
+	            {{ livro.Preco }}
+	        </td>
+	        <td>
+	            {{ livro.DataPublicacao }}
+	        </td>
+	        <td>
+	            <a href="edita/{{ livro.Id }}"> Editar </a>
+	            <a ng-href="excluir/{{ livro.Id }}"> Excluir </a>
+	        </td>
+	    </tr>
+	</table>		
+</div>

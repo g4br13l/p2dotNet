@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LivrariaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="LivrariaModelStoreContainer">
+    <EntitySet Name="Autor" EntityType="LivrariaModel.Store.Autor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Livro" EntityType="LivrariaModel.Store.Livro" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LivroAutor" EntityType="LivrariaModel.Store.LivroAutor" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_LivroAutor_Autor" Association="LivrariaModel.Store.FK_LivroAutor_Autor">
+      <End Role="Autor" EntitySet="Autor" />
+      <End Role="LivroAutor" EntitySet="LivroAutor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LivroAutor_Livro" Association="LivrariaModel.Store.FK_LivroAutor_Livro">
+      <End Role="Livro" EntitySet="Livro" />
+      <End Role="LivroAutor" EntitySet="LivroAutor" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Autor">
+    <Key>
+      <PropertyRef Name="IdAutor" />
+    </Key>
+    <Property Name="IdAutor" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Livro">
+    <Key>
+      <PropertyRef Name="IdLivro" />
+    </Key>
+    <Property Name="IdLivro" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="nvarchar(max)" />
+    <Property Name="Preco" Type="decimal" Precision="14" Scale="2" />
+    <Property Name="DataPublicacao" Type="datetime" />
+  </EntityType>
+  <EntityType Name="LivroAutor">
+    <Key>
+      <PropertyRef Name="Autor_IdAutor" />
+      <PropertyRef Name="Livro_IdLivro" />
+    </Key>
+    <Property Name="Autor_IdAutor" Type="int" Nullable="false" />
+    <Property Name="Livro_IdLivro" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_LivroAutor_Autor">
+    <End Role="Autor" Type="LivrariaModel.Store.Autor" Multiplicity="1" />
+    <End Role="LivroAutor" Type="LivrariaModel.Store.LivroAutor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Autor">
+        <PropertyRef Name="IdAutor" />
+      </Principal>
+      <Dependent Role="LivroAutor">
+        <PropertyRef Name="Autor_IdAutor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LivroAutor_Livro">
+    <End Role="Livro" Type="LivrariaModel.Store.Livro" Multiplicity="1" />
+    <End Role="LivroAutor" Type="LivrariaModel.Store.LivroAutor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Livro">
+        <PropertyRef Name="IdLivro" />
+      </Principal>
+      <Dependent Role="LivroAutor">
+        <PropertyRef Name="Livro_IdLivro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

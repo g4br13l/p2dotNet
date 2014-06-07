@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LivrariaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="LivrariaModelStoreContainer">
+          <EntitySet Name="Autor" EntityType="LivrariaModel.Store.Autor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Livro" EntityType="LivrariaModel.Store.Livro" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LivroAutor" EntityType="LivrariaModel.Store.LivroAutor" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_LivroAutor_Autor" Association="LivrariaModel.Store.FK_LivroAutor_Autor">
+            <End Role="Autor" EntitySet="Autor" />
+            <End Role="LivroAutor" EntitySet="LivroAutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LivroAutor_Livro" Association="LivrariaModel.Store.FK_LivroAutor_Livro">
+            <End Role="Livro" EntitySet="Livro" />
+            <End Role="LivroAutor" EntitySet="LivroAutor" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Autor">
+          <Key>
+            <PropertyRef Name="IdAutor" />
+          </Key>
+          <Property Name="IdAutor" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Livro">
+          <Key>
+            <PropertyRef Name="IdLivro" />
+          </Key>
+          <Property Name="IdLivro" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="nvarchar(max)" />
+          <Property Name="Preco" Type="decimal" Precision="14" Scale="2" />
+          <Property Name="DataPublicacao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="LivroAutor">
+          <Key>
+            <PropertyRef Name="Autor_IdAutor" />
+            <PropertyRef Name="Livro_IdLivro" />
+          </Key>
+          <Property Name="Autor_IdAutor" Type="int" Nullable="false" />
+          <Property Name="Livro_IdLivro" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_LivroAutor_Autor">
+          <End Role="Autor" Type="LivrariaModel.Store.Autor" Multiplicity="1" />
+          <End Role="LivroAutor" Type="LivrariaModel.Store.LivroAutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Autor">
+              <PropertyRef Name="IdAutor" />
+            </Principal>
+            <Dependent Role="LivroAutor">
+              <PropertyRef Name="Autor_IdAutor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LivroAutor_Livro">
+          <End Role="Livro" Type="LivrariaModel.Store.Livro" Multiplicity="1" />
+          <End Role="LivroAutor" Type="LivrariaModel.Store.LivroAutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Livro">
+              <PropertyRef Name="IdLivro" />
+            </Principal>
+            <Dependent Role="LivroAutor">
+              <PropertyRef Name="Livro_IdLivro" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LivrariaModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="LivrariaEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Autor" EntityType="LivrariaModel.Autor" />
+          <EntitySet Name="Livro" EntityType="LivrariaModel.Livro" />
+          <AssociationSet Name="LivroAutor" Association="LivrariaModel.LivroAutor">
+            <End Role="Autor" EntitySet="Autor" />
+            <End Role="Livro" EntitySet="Livro" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Autor">
+          <Key>
+            <PropertyRef Name="IdAutor" />
+          </Key>
+          <Property Name="IdAutor" Type="Int32" Nullable="false" />
+          <Property Name="Nome" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Livro" Relationship="LivrariaModel.LivroAutor" FromRole="Autor" ToRole="Livro" />
+        </EntityType>
+        <EntityType Name="Livro">
+          <Key>
+            <PropertyRef Name="IdLivro" />
+          </Key>
+          <Property Name="IdLivro" Type="Int32" Nullable="false" />
+          <Property Name="Nome" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Preco" Type="Decimal" Precision="14" Scale="2" />
+          <Property Name="DataPublicacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Autor" Relationship="LivrariaModel.LivroAutor" FromRole="Livro" ToRole="Autor" />
+        </EntityType>
+        <Association Name="LivroAutor">
+          <End Role="Autor" Type="LivrariaModel.Autor" Multiplicity="*" />
+          <End Role="Livro" Type="LivrariaModel.Livro" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LivrariaModelStoreContainer" CdmEntityContainer="LivrariaEntities">
+    <EntitySetMapping Name="Autor">
+      <EntityTypeMapping TypeName="IsTypeOf(LivrariaModel.Autor)">
+        <MappingFragment StoreEntitySet="Autor">
+          <ScalarProperty Name="IdAutor" ColumnName="IdAutor" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Livro">
+      <EntityTypeMapping TypeName="IsTypeOf(LivrariaModel.Livro)">
+        <MappingFragment StoreEntitySet="Livro">
+          <ScalarProperty Name="IdLivro" ColumnName="IdLivro" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Preco" ColumnName="Preco" />
+          <ScalarProperty Name="DataPublicacao" ColumnName="DataPublicacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="LivroAutor" TypeName="LivrariaModel.LivroAutor" StoreEntitySet="LivroAutor">
+      <EndProperty Name="Autor">
+        <ScalarProperty Name="IdAutor" ColumnName="Autor_IdAutor" />
+      </EndProperty>
+      <EndProperty Name="Livro">
+        <ScalarProperty Name="IdLivro" ColumnName="Livro_IdLivro" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

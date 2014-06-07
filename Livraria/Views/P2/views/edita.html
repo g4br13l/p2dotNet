@@ -1,0 +1,33 @@
+
+<h2> Edita </h2>
+
+
+<fieldset ng-controller="EditaLivroController">
+    <legend>Livro</legend>
+
+    <div class="editor-label">
+        Nome
+    </div>
+    <div class="editor-field">
+        <input type="text" name="Nome" ng-model="livro.nome"/>
+    </div>
+
+    <div class="editor-label">
+        Preco
+    </div>
+    <div class="editor-field">
+         <input type="text" name="preco" ng-model="livro.preco"/>
+    </div>
+
+    <div class="editor-label">
+        data de Publicacao
+    </div>
+    <div class="editor-field">
+         <input type="text" name="dataPublicacao" ng-model="livro.dataPublicacao"/>
+    </div>
+
+    <p>
+        <button type="button" class="btn btn-default" ng-click=""> Criar </button> 
+    </p>
+</fieldset>
+
